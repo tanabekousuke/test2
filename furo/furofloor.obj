@@ -1,0 +1,13 @@
+# This file uses centimeters as units for non-parametric coordinates.
+
+mtllib furofloor.mtl
+v 5.129423 0.050000 15.887496
+v 42.792845 0.050000 15.887496
+v 5.129423 0.050000 -4.448230
+v 42.792845 0.050000 -4.448230
+vt 0.000000 0.113267
+vt 1.000000 0.113267
+vt 1.000000 0.921075
+vt 0.000000 0.921075
+usemtl furofloor:phong1SG
+f 1/1 2/2 4/3 3/4
