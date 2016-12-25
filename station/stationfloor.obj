@@ -1,0 +1,13 @@
+# This file uses centimeters as units for non-parametric coordinates.
+
+mtllib stationfloor.mtl
+v -2.857509 0.006393 2.755963
+v 3.754928 0.006393 2.755963
+v -2.857509 0.006393 -2.500574
+v 3.754928 0.006393 -2.500574
+vt -0.000000 0.102526
+vt 1.000000 0.102526
+vt 1.000000 0.897473
+vt -0.000000 0.897473
+usemtl stationfloor:phong1SG
+f 1/1 2/2 4/3 3/4
