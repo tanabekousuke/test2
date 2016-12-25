@@ -1,0 +1,13 @@
+# This file uses centimeters as units for non-parametric coordinates.
+
+mtllib honyafloor.mtl
+v -3.204259 0.000000 0.297664
+v 2.121561 0.000000 0.297664
+v -3.204259 0.000000 -3.749553
+v 2.121561 0.000000 -3.749553
+vt -0.000000 0.120038
+vt 1.000000 0.120038
+vt 1.000000 0.879962
+vt -0.000000 0.879962
+usemtl honyafloor:initialShadingGroup
+f 1/1 2/2 4/3 3/4
