@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Models</title>
+    <meta name="description" content="Models — A-Frame">
+  <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.2.0/dist/aframe-altspace-component.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene altspace="fullspace: true">
+
+      <a-assets>
+        <a-asset-item id="restaurant-mtl" src="restaurant/restaurant.mtl"></a-asset-item>
+        <a-asset-item id="restaurant-obj" src="restaurant/restaurant.obj"></a-asset-item>
+        <a-asset-item id="restaurantfloor-mtl" src="restaurant/restauranttable.mtl"></a-asset-item>
+        <a-asset-item id="restaurantfloor-obj" src="restaurant/restauranttable.obj"></a-asset-item>
+        <a-asset-item id="restaurantfood-mtl" src="restaurant/food1.mtl"></a-asset-item>
+        <a-asset-item id="restaurantfood-obj" src="restaurant/food1.obj"></a-asset-item>
+        <a-asset-item id="kishaacafe-mtl" src="kishaacafe/kishaacafe.mtl"></a-asset-item>
+        <a-asset-item id="kishaacafe-obj" src="kishaacafe/kishaacafe.obj"></a-asset-item>
+        <a-asset-item id="kishaacafetennai-mtl" src="kishaacafe/tennai.mtl"></a-asset-item>
+        <a-asset-item id="kishaacafetennai-obj" src="kishaacafe/tennai.obj"></a-asset-item>
+        <a-asset-item id="furo-mtl" src="furo/furo1.mtl"></a-asset-item>
+        <a-asset-item id="furo-obj" src="furo/furo1.obj"></a-asset-item>
+        <a-asset-item id="furofloor-mtl" src="furo/furofloor.mtl"></a-asset-item>
+        <a-asset-item id="furofloor-obj" src="furo/furofloor.obj"></a-asset-item>       
+        <a-asset-item id="honya-mtl" src="honya/honya.mtl"></a-asset-item>
+        <a-asset-item id="honya-obj" src="honya/honya.obj"></a-asset-item>
+        <a-asset-item id="honya-mtl" src="honya/honyafloor.mtl"></a-asset-item>
+        <a-asset-item id="honya-obj" src="honya/honyafloor.obj"></a-asset-item>
+        <a-asset-item id="infinitysoup1-mtl" src="infinitysoup/infinitysoup1.mtl"></a-asset-item>
+        <a-asset-item id="infinitysoup1-obj" src="infinitysoup/infinitysoup1.obj"></a-asset-item>
+        <a-asset-item id="sushi1-mtl" src="sushi/sushiya.mtl"></a-asset-item>
+        <a-asset-item id="sushi1-obj" src="sushi/sushiya.obj"></a-asset-item>
+        <a-asset-item id="sushifloor-mtl" src="sushi/sushifloor.mtl"></a-asset-item>
+        <a-asset-item id="sushifloor-obj" src="sushi/sushifloor.obj"></a-asset-item>
+        <a-asset-item id="sushifood-mtl" src="sushi/sushiyafood.mtl"></a-asset-item>
+        <a-asset-item id="sushifood-obj" src="sushi/sushiyafood.obj"></a-asset-item>
+        <a-asset-item id="station-mtl" src="station/station.mtl"></a-asset-item>
+        <a-asset-item id="station-obj" src="station/station.obj"></a-asset-item>
+        <a-asset-item id="keshiki-mtl" src="keshiki.mtl"></a-asset-item>
+        <a-asset-item id="keshiki-obj" src="keshiki.obj"></a-asset-item>
+        <a-asset-item id="stationfloor-mtl" src="station/stationfloor.mtl"></a-asset-item>
+        <a-asset-item id="stationfloor-obj" src="station/stationfloor.obj"></a-asset-item>
+        <a-asset-item id="platformkoukoku-mtl" src="station/platformkoukoku.mtl"></a-asset-item>
+        <a-asset-item id="platformkoukoku-obj" src="station/platformkoukoku.obj"></a-asset-item>
+        <a-asset-item id="saku-mtl" src="station/saku.mtl"></a-asset-item>
+        <a-asset-item id="saku-obj" src="station/saku.obj"></a-asset-item>
+        <a-asset-item id="densya-mtl" src="station/densya.mtl"></a-asset-item>
+        <a-asset-item id="densya-obj" src="station/densya.obj"></a-asset-item>
+        <a-asset-item id="class-mtl" src="class/class.mtl"></a-asset-item>
+        <a-asset-item id="class-obj" src="class/class.obj"></a-asset-item>
+        <a-asset-item id="classfloor-mtl" src="class/classfloor.mtl"></a-asset-item>
+        <a-asset-item id="classfloor-obj" src="class/classfloor.obj"></a-asset-item>
+        <a-asset-item id="classmoji-mtl" src="class/classmoji.mtl"></a-asset-item>
+        <a-asset-item id="classmoji-obj" src="class/classmoji.obj"></a-asset-item>
+        <a-asset-item id="oodori-mtl" src="oodori.mtl"></a-asset-item>
+        <a-asset-item id="oodori-obj" src="oodori.obj"></a-asset-item>     
+        <a-asset-item id="dentyu-mtl" src="dentyu1.mtl"></a-asset-item>
+        <a-asset-item id="dentyu-obj" src="dentyu1.obj"></a-asset-item>
+        <a-asset-item id="kage1-mtl" src="kage1.mtl"></a-asset-item>
+        <a-asset-item id="kage1-obj" src="kage1.obj"></a-asset-item>
+        <a-asset-item id="kaigan-mtl" src="kaigan.mtl"></a-asset-item>
+        <a-asset-item id="kaigan2-mtl" src="kaigan2.mtl"></a-asset-item>        
+        <a-asset-item id="kaigan-obj" src="kaigan.obj"></a-asset-item>
+        <a-asset-item id="utigiwa-mtl" src="utigiwa.mtl"></a-asset-item>
+        <a-asset-item id="utigiwa-obj" src="utigiwa.obj"></a-asset-item>
+        <a-asset-item id="hanbaiki-mtl" src="hanbaiki.mtl"></a-asset-item>
+        <a-asset-item id="hanbaiki2-mtl" src="hanbaiki2.mtl"></a-asset-item>     
+        <a-asset-item id="hanbaiki-obj" src="hanbaiki.obj"></a-asset-item>
+        <a-asset-item id="class-obj" src="class/class.obj"></a-asset-item>
+        <a-asset-item id="class-mtl" src="class/class.mtl"></a-asset-item>
+        <a-asset-item id="classfloor-obj" src="class/classfloor.obj"></a-asset-item>
+        <a-asset-item id="classfloor-mtl" src="class/classfloor.mtl"></a-asset-item>       
+        <a-asset-item id="classmoji-obj" src="class/classmoji.obj"></a-asset-item>
+        <a-asset-item id="classmoji-mtl" src="class/classmoji.mtl"></a-asset-item> 
+        <img id="sky1" src="yuuyake2.jpg">
+
+           </a-assets>
+
+ <a-sky src="#sky1" radius="2500" position="0 11 0" rotation="0 50 0"></a-sky>
+
+
+<a-entity material="color: green" geometry="primitive: box" visible="" position="0 5 -25"  n-sound="autoplay: true; loop: true; src: sound/song.wav;volume: 0.2 ; rolloff: cosine; minDistance: 1; maxDistance: 50"></a-entity>
+
+<!--海岸-->
+ <a-entity material="color: green" geometry="primitive: box" visible="" position="0 0 60"  n-sound="autoplay: true; loop: true; src: sound/seasound.wav; volume: 0.3 ; rolloff: cosine; minDistance: 22; maxDistance: 66""></a-entity>
+
+<!--銭湯-->
+ <a-entity material="color: green" geometry="primitive: box" visible="" position="36 5 2"  n-sound="autoplay: true; loop: true; src: sound/publicbath.wav;volume: 0.6 ; rolloff: cosine; minDistance: 1; maxDistance: 16"></a-entity>
+
+<!--温泉-->
+ <a-entity material="color: green" geometry="primitive: box" visible="" position="36 2 20"  n-sound="autoplay: true; loop: true; src: sound/roten.wav;volume: 0.7 ; rolloff: cosine; minDistance: 1; maxDistance: 55"></a-entity>
+
+
+<!-- 自販機 -->
+<a-entity position="12 0 -18" scale="1.5 1.5 1.5">
+ <a-obj-model src="#hanbaiki-obj" mtl="#hanbaiki-mtl" ></a-obj-model>
+ <a-obj-model src="#hanbaiki-obj" mtl="#hanbaiki-mtl" position="4 0 0" ></a-obj-model>
+</a-entity>
+
+
+<!--建物 -->
+<a-entity position="0 0 0" scale="1.5 1.5 1.5"   altspace-cursor-collider='enabled: false' >
+
+
+
+ <a-obj-model src="#restaurant-obj" mtl="#restaurant-mtl" ></a-obj-model>
+ <a-obj-model src="#restaurantfood-obj" mtl="#restaurantfood-mtl" ></a-obj-model>
+ <a-obj-model src="#restaurantfloor-obj" mtl="#restaurantfloor-mtl" position="0 0.04 0" ></a-obj-model>
+ <a-obj-model src="#sushi1-obj" mtl="#sushi1-mtl"  position="0 0 5"></a-obj-model>
+ <a-obj-model src="#sushifloor-obj" mtl="#sushifloor-mtl"  position="0 0.04 5"></a-obj-model>
+ <a-obj-model src="#sushifood-obj" mtl="#sushifood-mtl"  position="0 0 5"></a-obj-model>
+ <a-obj-model src="#kishaacafe-obj" mtl="#kishaacafe-mtl"  position="0 0 0"></a-obj-model>
+ <a-obj-model src="#kishaacafetennai-obj" mtl="#kishaacafetennai-mtl"  position="0 0.06 0"></a-obj-model>
+ <a-obj-model src="#furo-obj" mtl="#furo-mtl"></a-obj-model>
+ <a-obj-model src="#furofloor-obj" mtl="#furofloor-mtl"></a-obj-model>
+ <a-obj-model src="#class-obj" mtl="#class-mtl"></a-obj-model>
+ <a-obj-model src="#classfloor-obj" mtl="#classfloor-mtl"></a-obj-model>
+ <a-obj-model src="#classmoji-obj" mtl="#classmoji-mtl"></a-obj-model>
+ <a-obj-model src="#honya-obj" mtl="#honya-mtl"  position="-15 0 0"></a-obj-model>
+ <a-obj-model src="#infinitysoup1-obj" mtl="#infinitysoup1-mtl"  position="-28 0 0"></a-obj-model>
+ <a-obj-model src="#station-obj" mtl="#station-mtl"  position="0 0 -15"></a-obj-model>
+ <a-obj-model src="#station-obj" mtl="#station-mtl"  position="0 0 -15"></a-obj-model>
+ <a-obj-model src="#saku-obj" mtl="#saku-mtl"  position="0.5 0.03 -13"></a-obj-model>
+ <a-obj-model src="#saku-obj" mtl="#saku-mtl"  position="48 0.03 -13"></a-obj-model>
+ <a-obj-model src="#stationfloor-obj" mtl="#stationfloor-mtl"  position="0 0.04 -15"></a-obj-model>
+ <a-obj-model src="#keshiki-obj" mtl="#keshiki-mtl" position="0 0.04 -15"></a-obj-model>
+ <a-obj-model src="#platformkoukoku-obj" mtl="#platformkoukoku-mtl"  position="0 0.04 -15"></a-obj-model>
+
+</a-entity>
+
+<!-- 大通り -->
+ <a-obj-model src="#oodori-obj" mtl="#oodori-mtl" position="0 0 0"  altspace-cursor-collider='enabled: false' ></a-obj-model>
+
+<!-- 電柱 -->
+ <a-obj-model src="#dentyu-obj" mtl="#dentyu-mtl" position="0 -0.2 0"  altspace-cursor-collider='enabled: false'></a-obj-model>
+<a-obj-model src="#kage1-obj" mtl="#kage1-mtl" position="0 0 0" scale="1 1 1"  altspace-cursor-collider='enabled: false'></a-obj-model>
+
+<!-- 海岸　砂場 -->
+<a-entity position="0 0.04 0"  altspace-cursor-collider='enabled: false'>
+ <a-obj-model src="#kaigan-obj" mtl="#kaigan-mtl" position="0 0 0"></a-obj-model>
+ <a-obj-model src="#kaigan-obj" mtl="#kaigan2-mtl" position="0 0 -10.84" scale="1 1 2"></a-obj-model>
+</a-entity>
+
+<!-- 海岸　波打ちアニメーション -->
+<a-entity position="0 0 30"  altspace-cursor-collider='enabled: false'>
+<a-animation attribute="position" from="0 0 32" to="0 0 29" dur="6000" fill="forwards" direction="alternate" repeat="indefinite"></a-animation>
+<a-obj-model src="#utigiwa-obj" mtl="#utigiwa-mtl" position="0 0.01 0" scale="1 1 1"></a-obj-model>
+
+</a-entity>
+
+
+</a-scene>
+  </body>
+</html>
