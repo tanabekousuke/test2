@@ -1,0 +1,41 @@
+newmtl isu:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tableset.jpg
+Ni 1.00
+newmtl isu:phongE4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd susi1.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl makizusi:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd makizushi.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl sushifloor:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sushifloor1.jpg
+Ni 1.00
+newmtl sushineta:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd sushineta.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 0.06
