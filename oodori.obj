@@ -1,0 +1,13 @@
+# This file uses centimeters as units for non-parametric coordinates.
+
+mtllib oodori.mtl
+v -11.101641 0.007623 3.605951
+v 10.992945 0.007623 3.605951
+v -11.101641 0.007623 -4.328450
+v 10.992945 0.007623 -4.328450
+vt 0.023995 0.297104
+vt 0.976006 0.297104
+vt 0.976006 0.702895
+vt 0.023995 0.702895
+usemtl oodori:phongE7SG
+f 1/1 2/2 4/3 3/4
