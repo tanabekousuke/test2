@@ -1,0 +1,13 @@
+# This file uses centimeters as units for non-parametric coordinates.
+
+mtllib kaigan.mtl
+v -76.844238 0.000000 36.534927
+v 76.131279 0.000000 36.534927
+v -76.844238 0.000000 23.690285
+v 76.131279 0.000000 23.690285
+vt -7.498859 1.003140
+vt 8.498860 1.003140
+vt 8.498860 -0.003141
+vt -7.498859 -0.003141
+usemtl kaigan:phongE1SG
+f 1/1 2/2 4/3 3/4
